@@ -1,24 +1,24 @@
 {
-  "name": "@bcgov/met-formio",
+  "name": "met-formio",
   "version": "1.0.0",
   "description": "bcgov components for form.io",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bcgov/common-hosted-form-service.git"
+    "url": "git+https://github.com/jadmsaadaot/met-formio.git"
   },
-  "author": "NR Common Service Showcase <NR.CommonServiceShowcase@gov.bc.ca>",
+  "author": "AOT <jad.saad@aot-technologies.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/bcgov/common-hosted-form-service/issues"
+    "url": "https://github.com/jadmsaadaot/met-formio/issues"
   },
-  "homepage": "https://bcgov.github.io/common-hosted-form-service",
+  "homepage": "https://github.com/jadmsaadaot/met-formio",
   "contributors": [
     {
-      "name": "Jason Sherman",
-      "email": "jsherman@parcsystems.ca"
+      "name": "Jad Saad",
+      "email": "jad.saad@aot-technologies.com"
     }
   ],
-  "private": true,
+  "private": false,
   "main": "lib/index.js",
   "module": "node",
   "scripts": {
@@ -37,10 +37,6 @@
     "build:formio": "node ./component-update.js build",
     "deploy:formio": "node ./component-update.js deploy"
   },
-  "pre-commit": [
-    "lint",
-    "test"
-  ],
   "files": [
     "dist",
     "lib"

@@ -1,10 +1,10 @@
-// This script attempts to gracefully rebuild and update @bcgov/met-formio if necessary
+// This script attempts to gracefully rebuild and update met-formio if necessary
 const fs = require("fs");
 const path = require("path");
 
 const COMPONENTS_DIR = ".";
 const FORMIO_DIR = ".";
-const TITLE = "@bcgov/met-formio";
+const TITLE = "met-formio";
 
 try {
   const args = process.argv.slice(2);
@@ -49,7 +49,7 @@ try {
 
 /**
  * @function buildComponents
- * @description Rebuild `@bcgov/met-formio` library
+ * @description Rebuild `met-formio` library
  */
 function buildComponents() {
   if (!fs.existsSync(`${COMPONENTS_DIR}/node_modules`)) {
@@ -63,7 +63,7 @@ function buildComponents() {
 
 /**
  * @function cleanComponents
- * @description Clean `@bcgov/met-formio` library directory
+ * @description Clean `met-formio` library directory
  */
 function cleanComponents() {
   console.log(`Cleaning ${TITLE}...`); // eslint-disable-line no-console
@@ -78,7 +78,7 @@ function cleanComponents() {
 
 /**
  * @function deployComponents
- * @description Redeploy `@bcgov/met-formio` library
+ * @description Redeploy `met-formio` library
  */
 function deployComponents() {
   console.log(`Redeploying ${TITLE}...`); // eslint-disable-line no-console
